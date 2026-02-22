@@ -24,7 +24,7 @@ try:
 
         action = np.array(
             [-1, 20.0]
-        )  # calculation action (steer, speed). Steer: [full right=-1.0, full left=1.0], Speed: [0.0, 20.0] (m/s)
+        )  # calculation action (steer, speed). Steer: [full right=-0.4189, full left=0.4189], Speed: [0.0, 20.0] (m/s)
         obs, reward, terminated, truncated, info = env.step(action)
         env.render()
         elapsed = time.perf_counter() - loop_start
