@@ -170,7 +170,6 @@ try:
         speed = max(5, -.379 * (2.7)**((abs(steering_angle))*10) + 15)
         current_speed = (last_speed+speed)/2
         last_speed = speed
-        print(current_speed, steering_angle)
         action = np.array(
             [steering_angle, 5]
         )  # calculation action (steer, speed). Steer: [full right=-0.4189, full left=0.4189], Speed: [0.0, 20.0] (m/s)
